@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/Greeting/StartLayout.cshtml";
+}
+
+
+<div class="title">
+    <h2>XO Toe Comptetive</h2>
+</div>
+<div class="buttons">
+    <a asp-controller="Authenticate" asp-action="Login" class="btn btn-light">Sign In</a>
+    <a asp-controller="Authenticate" asp-action="Register" class="btn btn-light">Sign Up</a>
+</div>
