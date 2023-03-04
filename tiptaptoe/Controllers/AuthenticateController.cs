@@ -9,7 +9,6 @@ using TicTacToe.Requests;
 
 namespace TicTacToe.Controllers
 {
-    [Route("[controller]")]
     public class AuthenticateController : Controller
     {
         private readonly ILogger<AuthenticateController> _logger;
@@ -19,17 +18,17 @@ namespace TicTacToe.Controllers
         [HttpGet("SignUp")]
         public IActionResult Register() => View();
 
-        [HttpPost("signin/processing")]
-        public async Task<IActionResult> Login(LoginRequest request)
-        {
+        // [HttpPost("signin/processing")]
+        // public async Task<IActionResult> Login(LoginRequest request)
+        // {
 
-        }
+        // }
 
-        [HttpPost("signin/processing")]
-        public async Task<IActionResult> Register(RegisterRequest request)
-        {
+        // [HttpPost("signin/processing")]
+        // public async Task<IActionResult> Register(RegisterRequest request)
+        // {
 
-        }
+        // }
         public AuthenticateController(ILogger<AuthenticateController> logger)
         {
             _logger = logger;
